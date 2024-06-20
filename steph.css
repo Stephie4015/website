@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;700&display=swap');
+ #header{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    scroll-padding-top: 2rem;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+ }
+
+ :root{
+   --text-color: #000000;
+   --main-color: green;
+ }
+ section{
+  padding: 20px 10%;
+
+ }
+ header{
+   position: fixed;
+   width: 90%;
+   top: 0;
+   right: 10px;
+   z-index: 1000;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 0 80px;
+   background: orange;
+ }
+ .logo {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--text-color);
+ }
+ .logo span{
+  color: var(--main-color); 
+ }
+ .navbar{
+  position: relative;
+  display: flex;
+ }
+ .navbar a{
+  font-size: 1rem;
+  padding: 10px 20px;
+  font-weight: 500;
+  color: var(--text-color);
+ }
+ .navbar a:hover{
+  color: var(--main-color);
+ }
+ #menu-icon{
+  font-size: 2rem;
+  cursor: pointer;
+  display: none;
+ }
+ .home{
+  width: 80%;
+  min-height: 80vh;
+  background-image: url(images/f.1.jpeg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+ }
+ .home-text h1{
+  font-size: 2.7rem;
+ }
+
+.home-text p{
+  font-size: 0.938rem;
+  margin: 0.4rem 0 1.8rem;
+}
+.btn{
+  padding: 10px 14px;
+  background: var(--main-color);
+  color: #fff;
+  border-radius: 0.3rem;
+  font-size: 14px;
+}
+.btn:hover{
+  background: #8fc53c;
+}
+.heading span{
+  display: flex;
+  justify-content: center;
+}
+.heading h2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.shop-container, 
+.new-container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+  gap: 1rem;
+  margin-top: 2rem;
+  overflow: hidden;
+  transition: transform 0.3s;
+}
+.title-price{
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+.title-price h3{
+  font-size: 1rem;
+  font-weight: 600;
+}
+.box span{
+  font-size: 1.1rem;
+  font-weight: 500;
+  padding-left: 12px;
+  color: var(--main-color)
+}
+.stars .bx{
+  color: var(--main-color);
+  position: relative;
+  display: inline;
+}
+.box .bx-cart{
+  position: absolute;
+  bottom: 0;
+  right: 20px;
+  padding: 7px;
+  font-size: 20px;
+  color: #fff;
+  border-radius: 5px 0 5px 0;
+  background: var(--main-color);
+}
+.box .bx-cart:hover{
+  background: #8fc53c;
+}
+.new-container .box{
+  border-radius: 4px;
+}
+.new-container .box .box-img{
+  border-radius: 4px;
+}
+.about{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+.about-img img{
+  width: 80%;
+  object-fit: contain;
+}
+.about-text span{
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: var(--main-color);
+}
+.about-text p{
+  font-size: 0.938rem;
+  margin: 0.5rem 0 1.4rem;
+}
+
+.brands-container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(50px,auto));
+  align-items: center;
+  justify-content: space-between;
+  gap: 6rem;
+  margin-top: 2rem;
+}
+.brand-container img:hover{
+  width: 100px;
+  filter: grayscale(0)
+}
+.newsletter{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-image: url(images/background1.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.newsletter h2{
+  color: #fff;
+}
+.news-box{
+  display: flex;
+  align-items: center;
+  margin-top: 2rem;
+}
+.news-box input{
+  width: 200px;
+  height: 20px;
+  border: none;
+  outline: none;
+  background: #fff;
+  padding: 10px;
+}
+.news-box .btn{
+  height: 20px;
+  padding: 11px;
+  border-radius: 0;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.footer{
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(240px, auto));
+  gap: 1rem;
+}
+.footer-box h2{
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.footer-box span{
+  color: var(--main-color);
+}
+
